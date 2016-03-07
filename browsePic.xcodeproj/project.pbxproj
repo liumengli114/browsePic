@@ -15,6 +15,8 @@
 		456140191C8D177100163071 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456140171C8D177100163071 /* LaunchScreen.storyboard */; };
 		456140241C8D177200163071 /* browsePicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 456140231C8D177200163071 /* browsePicTests.m */; };
 		4561402F1C8D177200163071 /* browsePicUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4561402E1C8D177200163071 /* browsePicUITests.m */; };
+		4561403E1C8D19B600163071 /* browsePicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4561403D1C8D19B600163071 /* browsePicCell.m */; };
+		45D9DB4E1C8D628600B2CD3E /* ShowImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D9DB4D1C8D628600B2CD3E /* ShowImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		4561402A1C8D177200163071 /* browsePicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = browsePicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4561402E1C8D177200163071 /* browsePicUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = browsePicUITests.m; sourceTree = "<group>"; };
 		456140301C8D177200163071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4561403C1C8D19B600163071 /* browsePicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = browsePicCell.h; sourceTree = "<group>"; };
+		4561403D1C8D19B600163071 /* browsePicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = browsePicCell.m; sourceTree = "<group>"; };
+		45D9DB4C1C8D628600B2CD3E /* ShowImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowImageView.h; sourceTree = "<group>"; };
+		45D9DB4D1C8D628600B2CD3E /* ShowImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				4561400D1C8D177100163071 /* AppDelegate.m */,
 				4561400F1C8D177100163071 /* ViewController.h */,
 				456140101C8D177100163071 /* ViewController.m */,
+				4561403C1C8D19B600163071 /* browsePicCell.h */,
+				4561403D1C8D19B600163071 /* browsePicCell.m */,
+				45D9DB4C1C8D628600B2CD3E /* ShowImageView.h */,
+				45D9DB4D1C8D628600B2CD3E /* ShowImageView.m */,
 				456140121C8D177100163071 /* Main.storyboard */,
 				456140151C8D177100163071 /* Assets.xcassets */,
 				456140171C8D177100163071 /* LaunchScreen.storyboard */,
@@ -207,6 +217,7 @@
 				TargetAttributes = {
 					456140051C8D177100163071 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 678CL6DWEH;
 					};
 					4561401E1C8D177200163071 = {
 						CreatedOnToolsVersion = 7.2;
@@ -270,6 +281,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4561403E1C8D19B600163071 /* browsePicCell.m in Sources */,
+				45D9DB4E1C8D628600B2CD3E /* ShowImageView.m in Sources */,
 				456140111C8D177100163071 /* ViewController.m in Sources */,
 				4561400E1C8D177100163071 /* AppDelegate.m in Sources */,
 				4561400B1C8D177100163071 /* main.m in Sources */,
@@ -413,10 +426,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chen YaPeng (C576C5D277)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chen YaPeng (C576C5D277)";
 				INFOPLIST_FILE = browsePic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xc.browsePic;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bidian.BiDian;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -424,10 +441,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chen YaPeng (C576C5D277)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chen YaPeng (C576C5D277)";
 				INFOPLIST_FILE = browsePic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xc.browsePic;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bidian.BiDian;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -498,6 +519,7 @@
 				456140351C8D177200163071 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		456140361C8D177200163071 /* Build configuration list for PBXNativeTarget "browsePicTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +528,7 @@
 				456140381C8D177200163071 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		456140391C8D177200163071 /* Build configuration list for PBXNativeTarget "browsePicUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +537,7 @@
 				4561403B1C8D177200163071 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
